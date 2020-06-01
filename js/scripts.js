@@ -1,10 +1,10 @@
-$(document).ready( () => {
+$(document).ready(function() {
    toggleCarousel();
    triggerLogin();
    triggerReservation();
 });
 
-const toggleCarousel = () => {
+function toggleCarousel() {
     $('#mycarousel').carousel({ interval: 2000 });
     $('#carouselButton').click(function() {
         if ($('#carouselButton').children('span').hasClass('fa-pause')) {
@@ -19,14 +19,14 @@ const toggleCarousel = () => {
     });
 }
 
-const triggerLogin = () => {
-    $('#loginBtn').click(() => {
+function triggerLogin(){
+    $('#loginBtn').click(function(){
         $('#loginModal').modal('show');
     });
 }
 
-const triggerReservation = () => {
-    $('#reservationBtn').click(() => {
+function triggerReservation() {
+    $('#reservationBtn').click(function(){
         $('#reservationModal').modal('show');
     });
 }
