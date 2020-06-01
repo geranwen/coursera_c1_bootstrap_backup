@@ -53,3 +53,15 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+#loginBtn :hover {
+  cursor: pointer; }
+
+.modal .modal-header {
+  background-color: #512DA8;
+  color: floralwhite; }
+  .modal .modal-header button {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background-color: #D1C4E9; }
